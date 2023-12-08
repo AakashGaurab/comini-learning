@@ -1,5 +1,5 @@
 // Select all headlines
-let headlines = document.getElementsByTagName('p');
+let headlines = document.getElementsByTagName('h1');
 
 
 // Loop through the headlines
