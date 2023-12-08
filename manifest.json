@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Rhyming Headlines",
+    "version": "1.0.0",
+    "description": "Changes headlines into rhymes and detects bias in articles",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": ["activeTab","storage","scripting"],
+    "action": {
+      "default_title": "Rhyming Headlines"
+    },
+    "content_scripts": [
+      {
+        "matches": ["http://*/*","https://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
