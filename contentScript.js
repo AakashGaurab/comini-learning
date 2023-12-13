@@ -1,5 +1,7 @@
 // Select all headlines
-const headlines = document.getElementsByTagName('p');
+
+let headlines = document.getElementsByTagName('h1');
+
 
 
 async function generateRhyme(text,i) {
@@ -104,3 +106,4 @@ function verifyOTP() {
   loader.style.display = 'none'
   }
 }
+
